@@ -11,12 +11,21 @@ namespace AulaTestes.Test
         }
 
         [Test]
-        public void Test1()
+        public void TesteCerto()
         {
             ClasseQueFazAlgo Cfa = new ClasseQueFazAlgo();
 
 
             Assert.AreEqual(true, Cfa.FazAlgo());
+            Assert.Pass();
+        }
+        [Test]
+        public void TesteErrado()
+        {
+            ClasseQueFazAlgo Cfa = new ClasseQueFazAlgo();
+
+
+            Assert.AreEqual(false, Cfa.FazAlgo());
             Assert.Pass();
         }
     }
